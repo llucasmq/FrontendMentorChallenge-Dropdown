@@ -1,0 +1,115 @@
+[data-dropdown] {
+  position: relative;
+}
+
+[data-dropdown] .dropdown-menu,
+[data-dropdown] .dropdown-menu-2 {
+  display: none;
+  animation: show-up 0.3s forwards;
+}
+
+@keyframes show-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+[data-dropdown].active .dropdown-menu,
+[data-dropdown].active .dropdown-menu-2,
+[data-dropdown]:hover .dropdown-menu,
+[data-dropdown]:hover .dropdown-menu-2 {
+  display: block;
+}
+
+.dropdown-menu {
+  padding: 15px 0px;
+  position: absolute;
+  top: 40px;
+  z-index: 200;
+  background: white;
+  box-shadow: 0px 0px 2rem hsl(0, 0%, 85%);
+  border-radius: 10px;
+  width: 8rem;
+  right: 10px;
+}
+
+.dropdown-menu-2 {
+  padding: 10px;
+  position: absolute;
+  top: 40px;
+  z-index: 200;
+  background: white;
+  box-shadow: 0px 0px 20px hsl(0, 0%, 80%);
+  border-radius: 10px;
+  width: 6rem;
+  left: 15px;
+}
+
+/* .dropdown-menu::before {
+  margin-left: 70px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  width: 0px;
+  height: 0px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #e54;
+} */
+
+.dropdown-menu a {
+  font-size: 13px;
+  text-decoration: none;
+  padding: 8px;
+  color: hsl(0, 0%, 41%);
+  display: block;
+  margin-left: 30px;
+}
+
+.dropdown-menu-2 a {
+  font-size: 13px;
+  display: inline-block;
+  padding: 7px;
+  margin-left: 10px;
+}
+
+.dropdown-menu a:hover {
+  color: (0, 0%, 8%);
+}
+
+.todo-list::before {
+  content: url(/images/icon-todo.svg);
+  display: block;
+  position: absolute;
+  left: 17px;
+  top: 20px;
+}
+
+.calendar::before {
+  content: url(/images/icon-calendar.svg);
+  display: block;
+  position: absolute;
+  left: 17px;
+  top: 50px;
+}
+
+.reminders::before {
+  content: url(/images/icon-reminders.svg);
+  display: block;
+  position: absolute;
+  left: 17px;
+  bottom: 50px;
+}
+
+.planning::before {
+  content: url(/images/icon-planning.svg);
+  display: block;
+  position: absolute;
+  left: 17px;
+  bottom: 20px;
+}

@@ -1,0 +1,47 @@
+header a {
+  color: hsl(0, 0%, 41%);
+  text-decoration: none;
+  display: block;
+  padding: 12px 14px;
+}
+
+header a:hover {
+  color: hsl(0, 0%, 8%);
+  transition: 0.5s;
+}
+
+#header {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+header img {
+  margin: 0 4rem 0 2rem;
+}
+
+#menu-2 {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 5fr 1fr;
+}
+
+#menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-b {
+  margin-right: 3rem;
+}
+
+.menu-b li:last-child a {
+  border: 2px solid hsl(0, 0%, 41%);
+  border-radius: 15px;
+}
+
+.menu-b li:last-child a:hover {
+  border: 2px solid hsl(0, 0%, 8%);
+  transition: 0.5s;
+}

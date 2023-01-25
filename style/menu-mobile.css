@@ -1,0 +1,59 @@
+[data-menu="button"] {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  [data-menu="button"] {
+    display: block;
+    all: unset;
+    cursor: pointer;
+  }
+  #header {
+    justify-content: space-between;
+  }
+  #nav {
+    display: flex;
+  }
+  #menu a {
+    margin: 0 1rem;
+  }
+  #menu-2 {
+    display: none;
+    position: absolute;
+    width: max-content;
+    top: 100px;
+    left: 0px;
+    height: calc(100vh - 100px);
+    z-index: 400;
+    background-color: hsl(0, 0%, 98%);
+  }
+  #nav.ativo #menu,
+  #nav.ativo #menu-2 {
+    display: block;
+  }
+
+  .dropdown-menu,
+  .dropdown-menu-2 {
+    display: block;
+    padding: 0px;
+    position: static;
+    box-shadow: none;
+    border-radius: 0px;
+    width: 100%;
+    background-color: hsl(0, 0%, 98%);
+    box-sizing: border-box;
+  }
+
+  .dropdown-menu li,
+  .dropdown-menu-2 li {
+    box-sizing: border-box;
+    margin-left: 10px;
+  }
+
+  .todo-list::before,
+  .calendar::before,
+  .reminders::before,
+  .planning::before {
+    display: none;
+  }
+}

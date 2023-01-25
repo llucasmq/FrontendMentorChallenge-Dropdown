@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Intro section with dropdown navigation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header id="header">
+    <img src="images/logo.svg" alt="logo">
+    <nav id="nav" class="menu-a">
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">
+        <img src="./images/icon-menu.svg" alt="">
+      </button>
+      <div id="menu-2">
+        <ul data-menu="list" id="menu">
+          <li data-dropdown="">
+            <a href="#">Features</a>
+            <ul class="dropdown-menu">
+              <li><a class="todo-list" href="#">Todo List</a></li>
+              <li><a class="calendar" href="#">Calendar</a></li>
+              <li><a class="reminders" href="#">Reminders</a></li>
+              <li><a class="planning" href="#">Planning</a></li>
+            </ul>
+          </li>
+          <li data-dropdown="">
+            <a href="#">Company</a>
+            <ul class="dropdown-menu-2">
+              <li><a class="history" href="">History</a></li>
+              <li><a class="our-Team" href="">Our Team</a></li>
+              <li><a class="blog" href="">Blog</a></li>
+            </ul>
+          </li>
+          <li> <a href="#">Careers</a> </li>
+          <li> <a href="#">About</a> </li>
+        </ul>
+
+
+        <ul data-menu="list" id="menu" class="menu-b">
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+      </div>
+
+
+    </nav>
+  </header>
+
+
+  <main>
+    <div class="container-conteudo">
+      <div class="conteudo-esquerda">
+        <img class="img-mobile" src="/images/image-hero-mobile.png" alt="">
+        <h1>Make <br> remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.</p>
+        <button>Learn more</button>
+        <div class="clientes">
+          <img src="images/client-databiz.svg" alt="">
+          <img src="images/client-audiophile.svg" alt="">
+          <img src="images/client-meet.svg" alt="">
+          <img src="images/client-maker.svg" alt="">
+        </div>
+      </div>
+      <div class="conteudo-direita">
+        <img src="./images/image-hero-desktop.png" alt="">
+      </div>
+    </div>
+  </main>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="./script/script.js"></script>
+</body>
+
+</html>
